@@ -8,7 +8,7 @@ const AllHospital = ({ location, filters }) => {
   useEffect(() => {
     const fetchHospitals = async () => {
       try {
-        let apiUrl = `http://localhost:5000/api/hospitals`;
+        let apiUrl = `https://ayush-pro.vercel.app/api/hospitals`;
 
         // Add query parameters for location, services, and specialties
         const queryParameters = new URLSearchParams();

@@ -8,11 +8,18 @@ import { hospitals } from './constants/constant.js';
 
 dotenv.config();
 
+const corsConfig={
+    origin:"*",
+    credential:true,
+    methods:["GET","POST","PUT","DELETE"],
+
+};
+
 const app = express();
 
 // Middleware
 app.use(express.json());
-app.use(cors()); // Enable CORS for all routes
+app.use(cors(corsConfig)); // Enable CORS for all routes
 
 // Connect to MongoDB
 await connectToDatabase();

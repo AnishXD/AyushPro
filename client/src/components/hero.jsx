@@ -9,25 +9,24 @@ const hero = () => {
       style={{ backgroundImage: `url(${hero_bg})` }}
     >
       {/* Text Div */}
-      <div className=" text-white w-1/2 px-6" style={{ paddingTop: "6rem" }}>
+      <div className="text-white w-1/2 px-6" style={{ paddingTop: '6rem' }}>
         <div>
           <h2 className="text-6xl font-bold mb-4 changa-one-regular">
             Discover World's Vibrant Hospitals 🏥
           </h2>
           <p className="text-xl py-6">
-            Finding health insights and Getting health bulletins from hospitals
-            to your fingertips
+            Finding health insights and getting health bulletins from hospitals
+            to your fingertips.
           </p>
         </div>
 
         <div className="mt-8">
           <SignedOut>
-            <Link
-              to="/"
-              className="bg-blue-700 px-6 py-4 rounded-2xl hover:bg-blue-500 transition duration-300 ease-in-out text-white text-xl font-semibold"
-            >
-              <SignInButton />
-            </Link>
+            <SignInButton>
+              <button className="bg-blue-700 px-6 py-4 rounded-2xl hover:bg-blue-500 transition duration-300 ease-in-out text-white text-xl font-semibold">
+                Sign In
+              </button>
+            </SignInButton>
           </SignedOut>
           <SignedIn>
             <Link

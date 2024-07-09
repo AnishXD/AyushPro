@@ -16,7 +16,7 @@ const corsConfig={
 };
 
 const app = express();
-
+app.options("",cors(corsConfig));
 // Middleware
 app.use(express.json());
 app.use(cors(corsConfig)); // Enable CORS for all routes
